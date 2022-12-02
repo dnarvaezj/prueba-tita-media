@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import { useContext } from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { AppContext } from './context/AppContext';
+import Login from './components/login/index.js';
+import Home from './components/home/index.js';
+import { ProtectRoute } from './utils/ProtectRoute';
+import { useEffect, useState, Fragment } from 'react';
 
 function App() {
+
+  // const [user, setUser] = useState(null);
+
+  const contextValue = useContext(AppContext);
+  console.log(contextValue);
+
+  let user = false;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Fragment>
+        <Routes>
+          <Route index element={<Login />} />
+          <Route path='/login' element={<Login />} />
+          <Route element={<ProtectRoute user={user} />}>
+            <Route path='/home' element={<Home />} />
+          </Route>
+        </Routes>
+      </Fragment>
+    </BrowserRouter>
   );
 }
 

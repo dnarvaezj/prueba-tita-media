@@ -17,7 +17,7 @@ function App() {
   let user = false;
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='prueba-tita-media'>
       <Fragment>
         <Routes>
           <Route index element={<Login />} />

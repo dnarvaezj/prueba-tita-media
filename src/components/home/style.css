@@ -39,15 +39,24 @@
     max-width: 230px;
     padding: 5px;
     margin: 20px;
+    border-radius: 5px;
   }
 
   .card {
     padding: 5px;
   }
 
+  .card:hover {
+    box-shadow: -1px 2px 21px 0px rgba(0,0,0,0.44);
+  }
+
+  .tags {
+    margin-bottom: 15px;
+  }
+
   .post-image {
     height: 200px;
-    width: 220px;
+    width: 230px;
   }
 
   .autor {

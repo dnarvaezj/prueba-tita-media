@@ -1,16 +1,170 @@
-.cont {
+  .cont-home {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-  
-  .login-cont {
+
+  .title {
+    margin-left: 30px;
+    top: -20px;
+    color: #aaa;
+  }
+ 
+  .header-cont {
     display: flex;
+    justify-content: space-between;
+    width: 100% auto;
+    height: 70px;
+    background-color: rgb(116, 116, 116);
+  }
+
+  .user-info {
+    margin-right: 30px;
+  }
+
+  .post-cont {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 350px;
-    height: 300px;
-    background-color: rgb(193, 193, 193);
+    width: 90%;
+    height: 100% auto;
+    background-color: rgb(245, 245, 245);
     border-radius: 5px;
     padding: 10px;
   }
+
+  .card {
+    max-width: 230px;
+    padding: 5px;
+    margin: 20px;
+  }
+
+  .card {
+    padding: 5px;
+  }
+
+  .post-image {
+    height: 200px;
+    width: 220px;
+  }
+
+  .autor {
+    display: flex;
+    align-items: space-around;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .post-image-profile {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    margin-right: 10px;
+  }
+
+  .autor-image-profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin-right: 20px;
+  }
+
+  .autor-name {
+    font-size: 20px;
+  }
+
+  .user-data {
+    margin-top: 30px;
+  }
+
+  /* modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-con {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+}
+
+.modal-comments {
+  width: 60%;
+}
+
+.comment-owner {
+  margin-right: 20px;
+}
+
+/* The Close Button */
+.close-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* dropdown styles*/
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

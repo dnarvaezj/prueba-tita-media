@@ -11,10 +11,8 @@ function App() {
 
   // const [user, setUser] = useState(null);
 
-  const contextValue = useContext(AppContext);
-  console.log(contextValue);
-
-  let user = false;
+  const { user } = useContext(AppContext);
+  // console.log(user);
 
   return (
     <BrowserRouter basename='prueba-tita-media'>

@@ -1,3 +1,8 @@
+/* body {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52,52,150,1) 47%, rgba(26,128,170,1) 100%);
+} */
+
 .cont {
   display: flex;
   justify-content: center;
@@ -6,11 +11,14 @@
 }
 
 .login-cont {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   width: 350px;
   height: 300px;
   background-color: rgb(193, 193, 193);
   border-radius: 5px;
   padding: 10px;
+}
+
+.login-button {
+  margin-top: 50px;
 }

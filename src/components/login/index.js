@@ -1,20 +1,20 @@
 import { React, useContext } from "react";
-import { Context } from "../../context/AppContext";
-import { Container, Row, Col, Alert } from "react-bootstrap";
+import { AppContext } from "../../context/AppContext";
 import './style.css';
+import { OnLogin } from "./OnLogin";
 
 
 const Login = () => {
 
   return (
-    <Container>
-      <div className="cont">
-        <div className="login-cont">
-          <h4>PRUEBA TITA</h4>
+    <div className="cont">
+      <div className="login-cont">
+        <h2>PRUEBA TITA MEDIA</h2>
+        <div className="login-button">
+          <OnLogin />
         </div>
-      
       </div>
-    </Container>
+    </div>
   )
 }
 

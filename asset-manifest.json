@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/prueba-tita-media/static/css/main.e8cefcc3.css",
+    "main.css": "/prueba-tita-media/static/css/main.41dd77b2.css",
     "main.js": "/prueba-tita-media/static/js/main.169ca79a.js",
     "static/js/787.48293c8f.chunk.js": "/prueba-tita-media/static/js/787.48293c8f.chunk.js",
     "index.html": "/prueba-tita-media/index.html",
-    "main.e8cefcc3.css.map": "/prueba-tita-media/static/css/main.e8cefcc3.css.map",
+    "main.41dd77b2.css.map": "/prueba-tita-media/static/css/main.41dd77b2.css.map",
     "main.169ca79a.js.map": "/prueba-tita-media/static/js/main.169ca79a.js.map",
     "787.48293c8f.chunk.js.map": "/prueba-tita-media/static/js/787.48293c8f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8cefcc3.css",
+    "static/css/main.41dd77b2.css",
     "static/js/main.169ca79a.js"
   ]
 }
